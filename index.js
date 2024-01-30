@@ -5,7 +5,7 @@ const app = express();
 const mongoose = require('mongoose');
 const port = process.env.PORT||3000;
 
-const expenseDB = require('./models/expense');
+const expenseDB = require('./expense');
 mongoose.connect('mongodb+srv://expensetracker:Madan2003@cluster0.rlsvl76.mongodb.net/newDb?retryWrites=true&w=majority');
 
 app.get('/expense',async (req, res) =>{
